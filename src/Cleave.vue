@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Cleave from './cleave.js'
+import Cleave from 'cleave.js'
 
 export default {
   props: {
