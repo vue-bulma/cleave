@@ -1,6 +1,6 @@
 {
   "name": "vue-cleave",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Cleave component is based on cleave.js for Vue",
   "main": "src/Cleave.vue",
   "peerDependencies": {
