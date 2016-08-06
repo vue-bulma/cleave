@@ -4,7 +4,7 @@
   "description": "Cleave component is based on cleave.js for Vue",
   "main": "src/Cleave.vue",
   "peerDependencies": {
-    "vue": "^1.0.26"
+    "vue": ">=2.0.0-beta.0"
   },
   "scripts": {},
   "repository": "git+https://github.com/vue-bulma/cleave.git",
@@ -21,6 +21,6 @@
   "author": "Fangdun Cai <cfddream@gmail.com>",
   "license": "Apache License 2.0",
   "dependencies": {
-    "cleave.js": "0.4.10"
+    "cleave.js": "0.6.5"
   }
 }
