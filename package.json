@@ -21,6 +21,6 @@
   "author": "Fangdun Cai <cfddream@gmail.com>",
   "license": "Apache License 2.0",
   "dependencies": {
-    "cleave.js": "0.6.5"
+    "cleave.js": "0.7.3"
   }
 }
