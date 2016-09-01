@@ -27,7 +27,7 @@ export default {
     }
   },
 
-  ready () {
+  mounted () {
     this.cleave = new Cleave(this.$el, this.options)
   },
 
