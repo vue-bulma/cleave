@@ -11,10 +11,6 @@ export default {
       type: String,
       default: 'text'
     },
-    value: {
-      type: String,
-      default: ''
-    },
     options: {
       type: Object,
       default: () => ({})
@@ -23,6 +19,7 @@ export default {
 
   data () {
     return {
+      value: '',
       cleave: null
     }
   },
