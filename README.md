@@ -2,11 +2,13 @@
 
 Cleave component is based on [cleave.js](https://github.com/nosir/cleave.js) for Vue Bulma.
 
+
 ## Installation
 
 ```
 $ npm install vue-cleave
 ```
+
 
 ## Examples
 
@@ -26,14 +28,15 @@ export default {
 </script>
 ```
 
+
 ## Badges
 
-Apache License 2.0
+![](https://img.shields.io/badge/license-MIT-blue.svg)
 ![](https://img.shields.io/badge/status-stable-green.svg)
 
 ---
 
-> [fundon.me](https://fundun.me) &nbsp;&middot;&nbsp;
+> [fundon.me](https://fundon.me) &nbsp;&middot;&nbsp;
 > GitHub [@fundon](https://github.com/fundon) &nbsp;&middot;&nbsp;
 > Twitter [@_fundon](https://twitter.com/_fundon)
 

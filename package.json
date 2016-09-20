@@ -19,8 +19,8 @@
     "input"
   ],
   "author": "Fangdun Cai <cfddream@gmail.com>",
-  "license": "Apache License 2.0",
+  "license": "MIT",
   "dependencies": {
-    "cleave.js": "0.7.3"
+    "cleave.js": "0.7.9"
   }
 }
