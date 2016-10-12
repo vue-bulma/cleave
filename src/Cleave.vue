@@ -1,5 +1,5 @@
 <template>
-  <input :type="type" v-model="value" />
+  <input type="text" v-model="value" />
 </template>
 
 <script>
@@ -7,10 +7,6 @@ import Cleave from 'cleave.js'
 
 export default {
   props: {
-    type: {
-      type: String,
-      default: 'text'
-    },
     options: {
       type: Object,
       default: () => ({})
