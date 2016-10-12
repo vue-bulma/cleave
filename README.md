@@ -6,7 +6,7 @@ Cleave component is based on [cleave.js](https://github.com/nosir/cleave.js) for
 ## Installation
 
 ```
-$ npm install vue-cleave
+$ npm install vue-cleave --save
 ```
 
 
@@ -39,4 +39,3 @@ export default {
 > [fundon.me](https://fundon.me) &nbsp;&middot;&nbsp;
 > GitHub [@fundon](https://github.com/fundon) &nbsp;&middot;&nbsp;
 > Twitter [@_fundon](https://twitter.com/_fundon)
-
