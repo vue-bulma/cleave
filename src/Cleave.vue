@@ -1,5 +1,5 @@
 <template>
-  <input type="text" v-model="value" />
+  <input type="text" v-bind:value="value" @input="updateValue($event.target.value)" />
 </template>
 
 <script>
@@ -7,6 +7,10 @@ import Cleave from 'cleave.js'
 
 export default {
   props: {
+    value: {
+      type: String,
+      default: ''
+    },
     options: {
       type: Object,
       default: () => ({})
@@ -15,9 +19,14 @@ export default {
 
   data () {
     return {
-      value: '',
       cleave: null
     }
+  },
+  
+  methods: {
+    updateValue(value) {
+      this.$emit('input', value);
+    },
   },
 
   mounted () {
