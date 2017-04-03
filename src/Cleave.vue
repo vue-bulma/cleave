@@ -1,5 +1,5 @@
 <template>
-  <input type="text" v-bind:value="value" @input="updateValue($event.target.value)" />
+  <input ref="input" type="text" v-bind:value="value" @input="updateValue($event.target.value)" />
 </template>
 
 <script>
@@ -12,6 +12,10 @@ export default {
       default: ''
     },
     options: {
+      type: Object,
+      default: () => ({})
+    },
+    events: {
       type: Object,
       default: () => ({})
     }
@@ -31,6 +35,9 @@ export default {
 
   mounted () {
     this.cleave = new Cleave(this.$el, this.options)
+    Object.keys(this.events).map((key) => {
+        this.$refs.input.addEventListener(key, this.events[key])
+    })
   },
 
   beforeDestroy () {
