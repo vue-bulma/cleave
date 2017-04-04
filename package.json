@@ -1,6 +1,6 @@
 {
   "name": "vue-cleave",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Cleave component is based on cleave.js for Vue",
   "repository": "vue-bulma/cleave",
   "license": "MIT",
@@ -24,6 +24,6 @@
     "vue": ">=2"
   },
   "dependencies": {
-    "cleave.js": "0.7.14"
+    "cleave.js": "^0.7.15"
   }
 }
