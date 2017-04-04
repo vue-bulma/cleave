@@ -22,7 +22,7 @@ export default {
       cleave: null
     }
   },
-  
+
   methods: {
     updateValue(value) {
       this.$emit('input', value);
@@ -35,7 +35,17 @@ export default {
 
   beforeDestroy () {
     this.cleave.destroy()
-  }
+  },
+
+  watch: {
+      options: {
+          deep: true,
+          handler(val) {
+              this.cleave.destroy()
+              this.cleave = new Cleave(this.$el, val)
+          },
+      },
+  },
 
 }
 </script>
