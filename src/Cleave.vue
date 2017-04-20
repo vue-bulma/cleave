@@ -1,5 +1,5 @@
 <template>
-  <input ref="input" type="text" v-bind:value="value" @input="updateValue($event.target.value)" />
+  <input ref="input" type="text" v-bind:value="value" @input="updateValue" />
 </template>
 
 <script>
@@ -28,8 +28,11 @@ export default {
   },
 
   methods: {
-    updateValue(value) {
-      this.$emit('input', value);
+    updateValue() {
+      const vm = this
+      setTimeout(function(){
+        vm.$emit('input', vm.$el.value)
+      }, 0)
     },
   },
 
@@ -51,7 +54,7 @@ export default {
               this.cleave.destroy()
               this.cleave = new Cleave(this.$el, val)
           },
-      },
+      }
   },
 
 }
