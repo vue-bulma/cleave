@@ -1,5 +1,5 @@
 <template>
-  <input ref="input" type="text" v-bind:value="value" @input="updateValue" />
+  <input ref="input" type="text" @input="updateValue" />
 </template>
 
 <script>
@@ -29,9 +29,8 @@ export default {
 
   methods: {
     updateValue () {
-      setTimeout(() => {
-        this.$emit('input', this.$el.value)
-      }, 0)
+      this.$emit('input', this.$el.value)
+      this.$emit('rawValueChanged', this.cleave.getRawValue())
     },
   },
 
@@ -40,6 +39,9 @@ export default {
     Object.keys(this.events).map((key) => {
       this.$refs.input.addEventListener(key, this.events[key])
     })
+    if (this.options.maxLength) {
+      this.$el.setAttribute('maxlength', this.options.maxLength)
+    }
   },
 
   beforeDestroy () {
