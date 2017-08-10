@@ -11,6 +11,9 @@ export default {
       type: String,
       default: ''
     },
+    rawValue: {
+      default: ''
+    },
     options: {
       type: Object,
       default: () => ({})
@@ -50,6 +53,8 @@ export default {
     } else {
       this.$el.addEventListener('input', this.emitEvent)
     }
+
+    this.cleave.setRawValue(this.rawValue);
   },
 
   beforeDestroy () {
