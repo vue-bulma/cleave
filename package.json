@@ -24,6 +24,6 @@
     "vue": ">=2"
   },
   "dependencies": {
-    "cleave.js": "^1.0.1"
+    "cleave.js": "^1.0.2"
   }
 }
