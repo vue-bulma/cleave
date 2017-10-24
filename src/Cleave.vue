@@ -37,7 +37,7 @@ export default {
   mounted () {
     this.$el.value = this.value
     this.cleave = new Cleave(this.$el, this.options)
-    Object.keys(this.events).map((key) => {
+    Object.keys(this.events).forEach((key) => {
       this.$refs.input.addEventListener(key, this.events[key])
     })
     if (this.options.maxLength) {
