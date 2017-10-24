@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-cleave.js@^0.7.15:
-  version "0.7.15"
-  resolved "https://registry.yarnpkg.com/cleave.js/-/cleave.js-0.7.15.tgz#f8e33a2b4d48c48c410e4978f983c85a8be32a5a"
+cleave.js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/cleave.js/-/cleave.js-1.0.2.tgz#9d1fa58cd6290c5410dde8d8664aa54f65e879af"
