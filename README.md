@@ -26,7 +26,7 @@ export default {
 }
 </script>
 ```
-### Access format free variable for a POST request
+### Access formatting free value
 ```
 this.$refs.creditcard.cleave.getRawValue()
 ```
