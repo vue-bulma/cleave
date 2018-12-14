@@ -63,6 +63,10 @@ export default {
         this.cleave.destroy()
         this.cleave = new Cleave(this.$el, val)
       }
+    },
+    // watch the value to make sure external changes (not by input) are taken into account as well
+    value: function (newValue) {
+      this.cleave.setRawValue(value(newValue));
     }
   },
 
